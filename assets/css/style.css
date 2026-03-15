@@ -261,13 +261,14 @@ p {
   display: none !important;
 }
 
-/* --- Hero displayfüllend, Trust-Leiste absolut unten (wie berentai) --- */
+/* --- Hero displayfüllend, Abschlusszeile (Trust-Leiste) stets im Bildschirm --- */
 .hero-wrapper {
   position: relative;
   min-height: 100vh;
   min-height: 100svh;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .hero-wrapper .hero-bg {
@@ -291,7 +292,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3rem 0 5rem;
+  padding: 0.5rem 0 2.5rem;
   text-align: center;
 }
 
@@ -377,14 +378,15 @@ p {
   color: var(--gold);
 }
 
-/* Trust-Leiste absolut am unteren Rand der Hero (wie berentai) */
+/* Trust-Leiste (Abschlusszeile) am unteren Rand, responsive im Viewport */
 .hero-trust {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
+  flex-shrink: 0;
   background: var(--card-bg);
-  padding: 1rem 0;
+  padding: 0.75rem 0;
   border-top: 1px solid var(--border);
 }
 
