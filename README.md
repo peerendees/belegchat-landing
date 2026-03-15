@@ -38,11 +38,28 @@ npx serve .
 
 ## Optional: BERENT-CI-Rules (Submodul)
 
-Falls du die vollständigen BERENT-CI-Rules nutzen möchtest:
+Falls du die BERENT Rules zu Beginn vergessen hast einzubinden, kannst du das **Setup-Skript** aus dem Rules-Repo ausführen:
+
+```bash
+cd /pfad/zum/belegchat-landing
+curl -sSL https://raw.githubusercontent.com/peerendees/berent-website-rules/main/setup.sh | bash
+```
+
+Das Skript heißt **`setup.sh`** und bindet das Rules-Repo als Submodule unter `.cursor/rules` ein. Danach:
+
+```bash
+git add .gitmodules .cursor/rules
+git commit -m "Rules als Submodule einbinden"
+git push origin main
+```
+
+**Manuell** (ohne Script):
 
 ```bash
 git submodule add https://github.com/peerendees/berent-website-rules.git .cursor/rules
 ```
+
+**Vercel:** In den Projekteinstellungen „Include Git submodules“ aktivieren.
 
 ## Deployment
 

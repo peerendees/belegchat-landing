@@ -684,6 +684,46 @@ section {
   color: var(--text-secondary);
 }
 
+/* --- Impressum / Rechtliche Seiten --- */
+.container--narrow {
+  max-width: 42rem;
+}
+
+.impressum-section h1 {
+  margin-bottom: 1.5rem;
+}
+
+.impressum-section h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.impressum-block {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.impressum-note {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-top: 1.5rem;
+}
+
+.impressum-back {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.link-impressum {
+  color: var(--copper);
+  text-decoration: none;
+}
+
+.link-impressum:hover {
+  color: var(--gold);
+}
+
 /* --- Cookie Banner --- */
 .cookie-banner {
   position: fixed;
