@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BelegChat — Belege per Threema einschicken, fertig für den Steuerberater. GoBD-konform, DSGVO-sicher, DATEV-Export auf Knopfdruck.">
+  <title>BelegChat — Belege per Threema. Fertig für den Steuerberater.</title>
+  <link rel="icon" type="image/png" href="/assets/images/BE_Farbe_V3.png">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="nav" role="navigation" aria-label="Hauptnavigation">
+      <div class="container nav-inner">
+        <div style="display: flex; align-items: center;">
+          <a href="https://berent.ai" class="berent-brand" aria-label="BERENT.AI — Beratung und Entwicklung">
+            <img src="/assets/images/logo_farbe_v3.webp" alt="BERENT — Beratung + Entwicklung" height="32">
+          </a>
+          <a href="#" class="nav-wordmark">BELEGCHAT</a>
+        </div>
+        <div class="nav-links">
+          <a href="#funktionsweise">Funktionsweise</a>
+          <a href="#sicherheit">Sicherheit</a>
+          <a href="#preise">Preise</a>
+          <a href="#faq">FAQ</a>
+          <a href="#registrierung" class="btn-nav">Beta-Zugang sichern</a>
+        </div>
+        <button type="button" class="hamburger" aria-label="Menü öffnen" aria-expanded="false" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <a href="#funktionsweise">Funktionsweise</a>
+        <a href="#sicherheit">Sicherheit</a>
+        <a href="#preise">Preise</a>
+        <a href="#faq">FAQ</a>
+        <a href="#registrierung" class="btn-nav">Beta-Zugang sichern</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Belege per Threema einschicken. Fertig für den Steuerberater.</h1>
+        <p class="subline">BelegChat erfasst deine Belege automatisch, ordnet sie buchhalterisch ein und erstellt auf Knopfdruck eine DATEV-Exportdatei — GoBD-konform, DSGVO-sicher, ohne Papierchaos.</p>
+        <div class="hero-buttons">
+          <a href="#registrierung" class="btn-primary" aria-label="Als Beta-Tester einschreiben">Jetzt als Beta-Tester einschreiben</a>
+          <a href="#funktionsweise" class="link-secondary">Wie es funktioniert ↓</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-bar" aria-label="Vertrauensmerkmale">
+      <div class="container">
+        <ul class="trust-list">
+          <li><span class="gold-plus" aria-hidden="true">+</span> GoBD-konform</li>
+          <li><span class="gold-plus" aria-hidden="true">+</span> DSGVO-sicher</li>
+          <li><span class="gold-plus" aria-hidden="true">+</span> Ende-zu-Ende-verschlüsselt via Threema</li>
+          <li><span class="gold-plus" aria-hidden="true">+</span> DATEV-Export auf Knopfdruck</li>
+          <li><span class="gold-plus" aria-hidden="true">+</span> Keine App-Installation notwendig</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="funktionsweise" aria-labelledby="heading-funktionsweise">
+      <div class="container">
+        <h2 id="heading-funktionsweise" class="section-title">Funktionsweise</h2>
+        <div class="steps">
+          <article class="step-card">
+            <span class="gold-plus" aria-hidden="true">+</span>
+            <h3>Einschicken</h3>
+            <p>Foto oder PDF per Threema senden</p>
+          </article>
+          <article class="step-card">
+            <span class="gold-plus" aria-hidden="true">+</span>
+            <h3>Erkennen</h3>
+            <p>OCR liest, KI schlägt Buchungskonto vor</p>
+          </article>
+          <article class="step-card">
+            <span class="gold-plus" aria-hidden="true">+</span>
+            <h3>Exportieren</h3>
+            <p>DATEV-Datei herunterladen — Steuerberater importiert direkt</p>
+          </article>
+        </div>
+        <p class="steps-note">Kein Upload-Portal. Keine neue App. Nur Threema — den Messenger, dem du bereits vertraust.</p>
+      </div>
+    </section>
+
+    <section id="sicherheit" aria-labelledby="heading-sicherheit">
+      <div class="container">
+        <h2 id="heading-sicherheit" class="section-title">Weshalb nur Threema?</h2>
+        <ul class="safety-list">
+          <li><span class="gold-plus" aria-hidden="true">+</span> Keine Telefonnummer, keine E-Mail-Adresse erforderlich</li>
+          <li><span class="gold-plus" aria-hidden="true">+</span> Ende-zu-Ende-verschlüsselt — kein Dritter, auch nicht BelegChat, kann mitlesen</li>
+          <li><span class="gold-plus" aria-hidden="true">+</span> Keine Metadatenspeicherung — Threema erfasst nicht, wer wann was schickt</li>
+          <li><span class="gold-plus" aria-hidden="true">+</span> DSGVO-konform by Design — Schweizer Datenschutzstandard</li>
+        </ul>
+        <blockquote class="info-box" cite="">
+          BelegChat verarbeitet ausschließlich Inhalte, die du aktiv einsendest. Personenbezogene Daten und Buchungsdaten werden getrennt gespeichert. Eine Weitergabe an Dritte findet nicht statt.
+        </blockquote>
+        <div class="tech-block">
+          <h3>Die Technologie dahinter</h3>
+          <article>
+            <h4>Threema Work Gateway</h4>
+            <p>Das Herzstück von BelegChat. Jeder Kunde erhält eine dedizierte Threema-Gateway-ID — einen verschlüsselten Eingangskanal, der ausschließlich für diesen einen Buchungskreis existiert. Nachrichten und Anhänge werden Ende-zu-Ende-verschlüsselt übertragen. Kein Server liest mit, bevor die Entschlüsselung auf der BelegChat-Seite stattfindet. Das ist kein Standard in der Branche — es ist die bewusste Entscheidung für maximale Vertraulichkeit.</p>
+          </article>
+          <article>
+            <h4>Threema Work</h4>
+            <p>BelegChat nutzt Threema Work als Kommunikationsbasis. Damit läuft auch die Kundenkommunikation — Onboarding, Support, Updates — ausschließlich über denselben verschlüsselten Kanal. Kein E-Mail-Ticketsystem, keine externen Plattformen.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="preise" aria-labelledby="heading-preise">
+      <div class="container">
+        <h2 id="heading-preise" class="section-title">Ehrliche Preise</h2>
+        <div class="pricing-grid">
+          <article class="pricing-card">
+            <h3>Standard</h3>
+            <p class="label">Ab offiziellem Launch</p>
+            <p class="price">19,95 €/Monat</p>
+          </article>
+          <article class="pricing-card featured">
+            <h3>Beta-Einstieg ★</h3>
+            <p class="label">Jetzt einsteigen, dauerhaft −20 %</p>
+            <p class="price">15,95 €/Monat</p>
+          </article>
+          <article class="pricing-card">
+            <h3>Gründertarif</h3>
+            <p class="label">Max. 20 Plätze — dauerhaft −30 % ab Launch</p>
+            <p class="price">9,95 € während Beta / 13,95 € ab Launch</p>
+          </article>
+        </div>
+        <p class="pricing-note">Alle Tarife inklusive bis zu 2 Mandanten und mindestens einer Threema-Work-ID. Abrechnung über Stripe. Monatlich kündbar. Kein Zweijahresabo.</p>
+      </div>
+    </section>
+
+    <section id="registrierung" aria-labelledby="heading-registrierung">
+      <div class="container">
+        <h2 id="heading-registrierung" class="section-title">Registrierung</h2>
+        <form action="#" method="post" aria-label="Beta-Registrierung" id="register-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Dein Name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" placeholder="deine@email.de" required>
+          </div>
+          <div class="form-group">
+            <label for="voucher">Gutschein-Code <span style="color: var(--text-secondary);">(optional)</span></label>
+            <input type="text" id="voucher" name="voucher" placeholder="Falls vorhanden">
+          </div>
+          <button type="submit" class="btn-primary" aria-label="Jetzt registrieren">Jetzt registrieren</button>
+          <p class="form-note">Mit der Registrierung stimmst du unseren Nutzungsbedingungen zu. Deine Daten werden ausschließlich zur Kontoverwaltung verwendet.</p>
+        </form>
+      </div>
+    </section>
+
+    <section id="faq" aria-labelledby="heading-faq">
+      <div class="container">
+        <h2 id="heading-faq" class="section-title">Häufige Fragen</h2>
+        <ul class="faq-list">
+          <li class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-1" id="faq-q1">
+              Was ist BelegChat?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-1" role="region" aria-labelledby="faq-q1">
+              <div class="faq-answer-inner">
+                BelegChat ist eine digitale Buchhaltungshilfe für Selbstständige und Kleinunternehmer in Deutschland. Du schickst deine Belege per Threema ein — BelegChat erkennt sie automatisch, ordnet sie einem Buchungskonto zu und erstellt eine DATEV-Exportdatei für deinen Steuerberater. Alles GoBD-konform, DSGVO-sicher, ohne Papierchaos.
+              </div>
+            </div>
+          </li>
+          <li class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-2" id="faq-q2">
+              Weshalb muss ich Threema verwenden?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-2" role="region" aria-labelledby="faq-q2">
+              <div class="faq-answer-inner">
+                Threema ist der einzige Messenger, der Ende-zu-Ende-Verschlüsselung mit vollständiger Anonymität verbindet — keine Telefonnummer, keine E-Mail-Adresse erforderlich. Für Belege mit sensiblen Geschäftsdaten ist das keine Komfort-Entscheidung, sondern eine datenschutzrechtliche. BelegChat nutzt darüber hinaus Threema Work Gateway: Jeder Kunde erhält eine eigene, dedizierte Eingangs-ID. Was du einschickst, bleibt ausschließlich in deinem Buchungskreis.
+              </div>
+            </div>
+          </li>
+          <li class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-3" id="faq-q3">
+              Was ist Threema Work Gateway — und weshalb ist das besonders?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-3" role="region" aria-labelledby="faq-q3">
+              <div class="faq-answer-inner">
+                Threema Work Gateway ist eine API-Schnittstelle, über die Unternehmen verschlüsselte Nachrichten senden und empfangen können — programmatisch, automatisiert, ohne dass ein Mensch mitlesen kann. BelegChat nutzt diese Schnittstelle, um für jeden Kunden einen eigenen, verschlüsselten Eingangskanal zu betreiben. Kein anderes Buchhaltungstool in Deutschland setzt auf diese Technologie. Das ist das Alleinstellungsmerkmal von BelegChat.
+              </div>
+            </div>
+          </li>
+          <li class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-4" id="faq-q4">
+              Was passiert, wenn ich meine Threema-ID verliere?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-4" role="region" aria-labelledby="faq-q4">
+              <div class="faq-answer-inner">
+                Der Zugang zum BelegChat-Eingang ist an deine Threema-ID gebunden. Geht sie verloren, ist eine Wiederherstellung nicht möglich. Deshalb ist beim Onboarding ein Threema-Backup über den Tresor zwingend erforderlich — du bestätigst diesen Schritt aktiv. Der Betreiber haftet nicht für den Verlust der ID.
+              </div>
+            </div>
+          </li>
+          <li class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-5" id="faq-q5">
+              Kann ich zwei getrennte Buchungskreise verwalten?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-5" role="region" aria-labelledby="faq-q5">
+              <div class="faq-answer-inner">
+                Ja. Ein Konto unterstützt bis zu zwei Mandanten — zum Beispiel ein Privatunternehmen und ein zweites Geschäft, oder zwei Partner mit je einer eigenen Threema-ID. Jeder Buchungskreis ist strikt getrennt: Kein gegenseitiger Einblick, keine gemeinsamen Daten.
+              </div>
+            </div>
+          </li>
+          <li class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-6" id="faq-q6">
+              Ist BelegChat GoBD-konform?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-6" role="region" aria-labelledby="faq-q6">
+              <div class="faq-answer-inner">
+                BelegChat stellt die technischen Mittel bereit, die eine GoBD-konforme Arbeitsweise ermöglichen: Belege werden unveränderlich archiviert, alle Änderungen werden protokolliert, verbuchte Buchungssätze sind dauerhaft gesperrt. Die Verantwortung für die Einhaltung der GoBD liegt beim Nutzer — BelegChat ist Werkzeug und Auftragsverarbeiter, keine Buchhaltungssoftware.
+              </div>
+            </div>
+          </li>
+          <li class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-7" id="faq-q7">
+              Muss mein Steuerberater BelegChat kennen?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-7" role="region" aria-labelledby="faq-q7">
+              <div class="faq-answer-inner">
+                Nein. Dein Steuerberater erhält eine Standard-DATEV-Exportdatei, die er direkt in DATEV Unternehmen online importieren kann. Kein neues Programm, keine Schulung, kein zusätzlicher Aufwand auf seiner Seite.
+              </div>
+            </div>
+          </li>
+          <li class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-8" id="faq-q8">
+              Was bedeutet Beta-Phase?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-8" role="region" aria-labelledby="faq-q8">
+              <div class="faq-answer-inner">
+                BelegChat befindet sich in der aktiven Entwicklungsphase. Beta-Tester nutzen das Produkt zu einem dauerhaft vergünstigten Preis und geben aktiv Rückmeldung. Im Gegenzug erhalten sie priorisierten Support direkt über Threema Work und dauerhaften Zugang zum vergünstigten Tarif — auch nach dem offiziellen Launch.
+              </div>
+            </div>
+          </li>
+          <li class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-9" id="faq-q9">
+              Wie werden meine Daten gespeichert?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-9" role="region" aria-labelledby="faq-q9">
+              <div class="faq-answer-inner">
+                Personenbezogene Daten und Buchungsdaten werden in getrennten Datenbanken gespeichert (Zwei-Datenbank-Architektur mit Pseudonymisierung). Belegdateien liegen verschlüsselt im Storage-System. Alle eingehenden Daten kommen Ende-zu-Ende-verschlüsselt über Threema — kein Klartext-Eingang über unsichere Kanäle. Für alle externen Dienstleister (Supabase, Stripe u. a.) bestehen Auftragsverarbeitungsverträge gemäß Art. 28 DSGVO.
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta-banner" aria-label="Gründer-Plätze">
+      <div class="container">
+        <h2>Noch 20 Gründer-Plätze verfügbar</h2>
+        <p class="subline">Dauerhaft 30 % unter dem regulären Preis. Solange das Konto aktiv bleibt.</p>
+        <a href="#registrierung" class="btn-primary" aria-label="Jetzt einschreiben">Jetzt einschreiben</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <a href="https://berent.ai" class="footer-brand" aria-label="BERENT.AI">
+        <img src="/assets/images/logo_farbe_v3.webp" alt="BERENT — Beratung + Entwicklung" height="24">
+      </a>
+      <span class="footer-copy">© 2026 BelegChat · belegchat.de</span>
+      <nav class="footer-links" aria-label="Rechtliche Links">
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutzerklärung</a>
+        <a href="#">Nutzungsbedingungen</a>
+      </nav>
+    </div>
+    <div class="container">
+      <p class="footer-trademark">Threema ist ein eingetragenes Warenzeichen der Threema GmbH.</p>
+    </div>
+  </footer>
+
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Hinweis zu Analytics">
+    <p>Diese Seite verwendet Plausible Analytics — datenschutzkonform, ohne personenbezogene Daten. Kein Consent erforderlich.</p>
+    <button type="button" class="btn-dismiss" id="cookie-dismiss" aria-label="Banner schließen">Verstanden</button>
+  </div>
+
+  <script defer src="https://plausible.io/js/script.js" data-domain="belegchat.de"></script>
+  <script>
+    (function() {
+      // Cookie-Banner: ausblenden wenn banner_dismissed=1
+      function getCookie(name) {
+        var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+        return v ? v[2] : null;
+      }
+      function setCookie(name, value, days) {
+        var d = new Date();
+        d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+        document.cookie = name + '=' + value + ';path=/;expires=' + d.toUTCString();
+      }
+      var banner = document.getElementById('cookie-banner');
+      var dismiss = document.getElementById('cookie-dismiss');
+      if (getCookie('banner_dismissed') === '1') {
+        banner.classList.add('is-hidden');
+      }
+      if (dismiss) {
+        dismiss.addEventListener('click', function() {
+          setCookie('banner_dismissed', '1', 365);
+          banner.classList.add('is-hidden');
+        });
+      }
+
+      // Mobile Menu
+      var hamburger = document.getElementById('hamburger');
+      var mobileMenu = document.getElementById('mobile-menu');
+      if (hamburger && mobileMenu) {
+        hamburger.addEventListener('click', function() {
+          var open = mobileMenu.classList.toggle('is-open');
+          hamburger.setAttribute('aria-expanded', open);
+          hamburger.setAttribute('aria-label', open ? 'Menü schließen' : 'Menü öffnen');
+        });
+        mobileMenu.querySelectorAll('a').forEach(function(a) {
+          a.addEventListener('click', function() {
+            mobileMenu.classList.remove('is-open');
+            hamburger.setAttribute('aria-expanded', 'false');
+            hamburger.setAttribute('aria-label', 'Menü öffnen');
+          });
+        });
+      }
+
+      // Registrierungsformular: Submit verhindern (MVP, kein Backend)
+      var form = document.getElementById('register-form');
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          alert('Registrierung wird bald aktiv. Danke für dein Interesse!');
+        });
+      }
+
+      // FAQ Akkordeon (vanilla JS)
+      document.querySelectorAll('.faq-question').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var item = this.closest('.faq-item');
+          var wasOpen = item.classList.contains('is-open');
+          document.querySelectorAll('.faq-item').forEach(function(i) {
+            i.classList.remove('is-open');
+            i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+          });
+          if (!wasOpen) {
+            item.classList.add('is-open');
+            this.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
