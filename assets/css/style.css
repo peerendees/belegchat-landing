@@ -253,17 +253,19 @@ p {
 }
 
 /* --- Hero --- */
-/* Ausblenden (vorübergehend): Beta, Registrierung, Gründer */
+/* Ausblenden (vorübergehend): Beta, Registrierung, Gründer, Preise */
 .hide-beta,
 .hide-registration,
-.hide-gruender {
+.hide-gruender,
+.hide-preise {
   display: none !important;
 }
 
-/* --- Hero mit unterer Trust-Leiste (wie berentai) --- */
+/* --- Hero displayfüllend, Trust-Leiste absolut unten (wie berentai) --- */
 .hero-wrapper {
   position: relative;
-  min-height: 60vh;
+  min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
 }
@@ -286,7 +288,10 @@ p {
 .hero {
   position: relative;
   flex: 1;
-  padding: 3rem 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0 5rem;
   text-align: center;
 }
 
@@ -294,7 +299,40 @@ p {
   font-size: 1.125rem;
   color: var(--text);
   max-width: 42rem;
-  margin: 0 auto 2rem;
+  margin: 0 auto 1.5rem;
+}
+
+.hero-workflow {
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+}
+
+.hero-workflow-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-workflow--mobile {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hero-workflow--mobile {
+    display: none;
+  }
+  .hero-workflow--desktop {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-workflow--desktop {
+    display: none;
+  }
+  .hero-workflow--mobile {
+    display: block;
+  }
 }
 
 .hero-buttons {
@@ -339,9 +377,12 @@ p {
   color: var(--gold);
 }
 
-/* Trust-Leiste als unterer Abschluss der Hero */
+/* Trust-Leiste absolut am unteren Rand der Hero (wie berentai) */
 .hero-trust {
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background: var(--card-bg);
   padding: 1rem 0;
   border-top: 1px solid var(--border);

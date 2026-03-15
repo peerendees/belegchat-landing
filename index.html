@@ -21,7 +21,7 @@
         <div class="nav-links">
           <a href="#funktionsweise">Funktionsweise</a>
           <a href="#sicherheit">Sicherheit</a>
-          <a href="#preise">Preise</a>
+          <a href="#preise" class="hide-preise">Preise</a>
           <a href="#faq">FAQ</a>
           <a href="#registrierung" class="btn-nav hide-beta">Beta-Zugang sichern</a>
         </div>
@@ -34,7 +34,7 @@
       <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
         <a href="#funktionsweise">Funktionsweise</a>
         <a href="#sicherheit">Sicherheit</a>
-        <a href="#preise">Preise</a>
+        <a href="#preise" class="hide-preise">Preise</a>
         <a href="#faq">FAQ</a>
         <a href="#registrierung" class="btn-nav hide-beta">Beta-Zugang sichern</a>
       </div>
@@ -46,9 +46,33 @@
       <!-- Optional: Hintergrundbild z. B. /assets/images/hero.webp setzen -->
       <div class="hero-bg" style="background-image: url('/assets/images/hero.webp');"></div>
       <div class="hero">
-        <div class="container">
+        <div class="container hero-content">
           <h1>Belege per Threema einschicken. Fertig für den Steuerberater.</h1>
           <p class="subline">BelegChat erfasst deine Belege automatisch, ordnet sie buchhalterisch ein und erstellt auf Knopfdruck eine DATEV-Exportdatei — GoBD-konform, DSGVO-sicher, ohne Papierchaos.</p>
+          <div class="hero-workflow" aria-hidden="true">
+            <svg class="hero-workflow-svg hero-workflow--desktop" viewBox="0 0 560 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Workflow: Foto einschicken, automatisch erkannt, DATEV-Export">
+              <defs>
+                <style>.hw-label{font-family:'Bebas Neue',sans-serif;font-size:11px;fill:#B5742A;letter-spacing:0.06em}.hw-sub{font-family:Lora,serif;font-size:10px;fill:#9A8870}.hw-arrow{stroke:#E8C98A;stroke-width:2;fill:none;marker-end:url(#arrowgold)}</style>
+                <marker id="arrowgold" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#E8C98A"/></marker>
+              </defs>
+              <g transform="translate(0,0)"><rect x="10" y="0" width="100" height="56" rx="8" fill="none" stroke="#B5742A" stroke-width="1.5"/><path d="M35 18 L65 18 M50 12 L50 24 M42 32 L58 32 L58 44 L42 44 Z" stroke="#B5742A" stroke-width="1.5" fill="none"/><text x="60" y="38" class="hw-label" text-anchor="middle">FOTO</text><text x="60" y="50" class="hw-label" text-anchor="middle">EINSCHICKEN</text><text x="60" y="66" class="hw-sub" text-anchor="middle">per Threema</text></g>
+              <path d="M120 70 L160 70" class="hw-arrow"/>
+              <g transform="translate(170,0)"><circle cx="220" cy="28" r="24" fill="none" stroke="#B5742A" stroke-width="1.5"/><path d="M208 28 L212 24 L216 28 L212 32 Z M220 16 L220 40 M208 28 L232 28" stroke="#B5742A" stroke-width="1.2" fill="none"/><text x="220" y="58" class="hw-label" text-anchor="middle">AUTOMATISCH</text><text x="220" y="70" class="hw-label" text-anchor="middle">ERKANNT</text><text x="220" y="86" class="hw-sub" text-anchor="middle">OCR + Buchungskonto</text></g>
+              <path d="M330 70 L370 70" class="hw-arrow"/>
+              <g transform="translate(380,0)"><rect x="390" y="4" width="100" height="48" rx="4" fill="none" stroke="#B5742A" stroke-width="1.5"/><text x="440" y="26" class="hw-label" text-anchor="middle">DATEV</text><text x="440" y="38" class="hw-sub" text-anchor="middle">Export</text><text x="440" y="68" class="hw-label" text-anchor="middle">DATEV-EXPORT</text><text x="440" y="86" class="hw-sub" text-anchor="middle">für den Steuerberater</text></g>
+            </svg>
+            <svg class="hero-workflow-svg hero-workflow--mobile" viewBox="0 0 140 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Workflow: Foto einschicken, automatisch erkannt, DATEV-Export">
+              <defs>
+                <style>.hw-label{font-family:'Bebas Neue',sans-serif;font-size:11px;fill:#B5742A;letter-spacing:0.06em}.hw-sub{font-family:Lora,serif;font-size:10px;fill:#9A8870}.hw-arrow{stroke:#E8C98A;stroke-width:2;fill:none;marker-end:url(#arrowgoldv)}</style>
+                <marker id="arrowgoldv" markerWidth="8" markerHeight="8" refX="4" refY="8" orient="auto"><path d="M4 0 L8 8 L0 8 Z" fill="#E8C98A"/></marker>
+              </defs>
+              <g transform="translate(20,0)"><rect x="0" y="0" width="100" height="56" rx="8" fill="none" stroke="#B5742A" stroke-width="1.5"/><path d="M25 18 L55 18 M40 12 L40 24 M32 32 L48 32 L48 44 L32 44 Z" stroke="#B5742A" stroke-width="1.5" fill="none"/><text x="50" y="38" class="hw-label" text-anchor="middle">FOTO EINSCHICKEN</text><text x="50" y="54" class="hw-sub" text-anchor="middle">per Threema</text></g>
+              <path d="M70 66 L70 106" class="hw-arrow"/>
+              <g transform="translate(20,116)"><circle cx="50" cy="28" r="24" fill="none" stroke="#B5742A" stroke-width="1.5"/><path d="M38 28 L42 24 L46 28 L42 32 Z M50 16 L50 40 M38 28 L62 28" stroke="#B5742A" stroke-width="1.2" fill="none"/><text x="50" y="58" class="hw-label" text-anchor="middle">AUTOMATISCH ERKANNT</text><text x="50" y="74" class="hw-sub" text-anchor="middle">OCR + Buchungskonto</text></g>
+              <path d="M70 182 L70 222" class="hw-arrow"/>
+              <g transform="translate(20,232)"><rect x="0" y="0" width="100" height="48" rx="4" fill="none" stroke="#B5742A" stroke-width="1.5"/><text x="50" y="22" class="hw-label" text-anchor="middle">DATEV</text><text x="50" y="36" class="hw-sub" text-anchor="middle">Export</text><text x="50" y="68" class="hw-label" text-anchor="middle">DATEV-EXPORT</text><text x="50" y="84" class="hw-sub" text-anchor="middle">für den Steuerberater</text></g>
+            </svg>
+          </div>
           <div class="hero-buttons">
             <a href="#registrierung" class="btn-primary hide-beta" aria-label="Als Beta-Tester einschreiben">Jetzt als Beta-Tester einschreiben</a>
             <a href="#funktionsweise" class="link-secondary">Wie es funktioniert ↓</a>
@@ -88,7 +112,7 @@
             <p>DATEV-Datei herunterladen — Steuerberater importiert direkt</p>
           </article>
         </div>
-        <p class="steps-note">Kein Upload-Portal. BelegChat nutzt du als Progressive Web App im Browser — optional auf dem Gerät installierbar. Belege schickst du ausschließlich per Threema: den Messenger, dem du bereits vertraust.</p>
+        <p class="steps-note">Kein Upload-Portal. BelegChat nutzt du als Progressive Web App im Browser — optional auf dem Gerät installierbar. Belege schickst du ausschließlich per Threema: den Messenger, dem du ab nun vertraust.</p>
       </div>
     </section>
 
@@ -118,7 +142,7 @@
       </div>
     </section>
 
-    <section id="preise" aria-labelledby="heading-preise">
+    <section id="preise" class="hide-preise" aria-labelledby="heading-preise">
       <div class="container">
         <h2 id="heading-preise" class="section-title">Ehrliche Preise</h2>
         <div class="pricing-grid">
@@ -187,7 +211,7 @@
             <div class="faq-answer" id="faq-1b" role="region" aria-labelledby="faq-q1b">
               <div class="faq-answer-inner">
                 <strong>Kundenkonto:</strong> Dein BelegChat-Zugang. Ein Kundenkonto entspricht einem Vertrag und kann bis zu zwei Mandanten umfassen.<br>
-                <strong>Mandant / Buchungskreis:</strong> Ein Mandant ist ein buchhalterisch getrennter Bereich — z. B. eine Firma, ein Gewerbe oder ein Projekt. Jeder Mandant hat seine eigene Threema-Anbindung und seine eigenen Belege sowie Buchungssätze. Zwei Mandanten unter einem Konto sind strikt getrennt: Kein gegenseitiger Einblick, keine gemeinsamen Daten.
+                <strong>Mandant / Buchungskreis:</strong> Ein Mandant ist ein buchhalterisch getrennter Bereich — z. B. eine Firma oder ein Gewerbe. Jeder Mandant hat seine eigene Threema-Anbindung und seine eigenen Belege sowie Buchungssätze. Zwei Mandanten unter einem Konto sind strikt getrennt: Kein gegenseitiger Einblick, keine gemeinsamen Daten.
               </div>
             </div>
           </li>
@@ -215,7 +239,7 @@
           </li>
           <li class="faq-item">
             <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-4" id="faq-q4">
-              Was passiert, wenn ich meine Threema-ID verliere?
+              Wie ist mein Zugang mit Threema abgesichert?
               <span class="faq-icon" aria-hidden="true">+</span>
             </button>
             <div class="faq-answer" id="faq-4" role="region" aria-labelledby="faq-q4">
@@ -286,7 +310,7 @@
             </button>
             <div class="faq-answer" id="faq-10" role="region" aria-labelledby="faq-q10">
               <div class="faq-answer-inner">
-                BelegChat kommt ohne separates Upload-Portal aus: Deine Belege schickst du direkt per Threema — kein separates Hochlade-Formular, kein zusätzlicher Kanal. Die Oberfläche, in der du Belege prüfst, Buchungskonten zuweist und den DATEV-Export erstellst, ist eine <strong>Progressive Web App (PWA)</strong>: Du nutzt BelegChat im Browser oder installierst die PWA optional auf deinem Gerät („Zum Startbildschirm hinzufügen“). Kein App-Store, keine native Installation. Der Eingang für Belege bleibt dabei immer Threema — der Messenger, dem du bereits vertraust.
+                BelegChat kommt ohne separates Upload-Portal aus: Deine Belege schickst du direkt per Threema — kein separates Hochlade-Formular, kein zusätzlicher Kanal. Die Oberfläche, in der du Belege prüfst, Buchungskonten zuweist und den DATEV-Export erstellst, ist eine <strong>Progressive Web App (PWA)</strong>: Du nutzt BelegChat im Browser oder installierst die PWA optional auf deinem Gerät („Zum Startbildschirm hinzufügen“). Kein App-Store, keine native Installation. Der Eingang für Belege bleibt dabei immer Threema — der Messenger, dem du ab nun vertraust.
               </div>
             </div>
           </li>
