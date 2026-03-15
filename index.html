@@ -14,7 +14,7 @@
       <div class="container nav-inner">
         <div style="display: flex; align-items: center;">
           <a href="https://berent.ai" class="berent-brand" aria-label="BERENT.AI — Beratung und Entwicklung">
-            <img src="/assets/images/logo_farbe_v3.webp" alt="BERENT — Beratung + Entwicklung" height="32">
+            <img src="/assets/images/logo_farbe_v3.webp" alt="BERENT — Beratung + Entwicklung" height="44">
           </a>
           <a href="#" class="nav-wordmark">BELEGCHAT</a>
         </div>
@@ -23,7 +23,7 @@
           <a href="#sicherheit">Sicherheit</a>
           <a href="#preise">Preise</a>
           <a href="#faq">FAQ</a>
-          <a href="#registrierung" class="btn-nav">Beta-Zugang sichern</a>
+          <a href="#registrierung" class="btn-nav hide-beta">Beta-Zugang sichern</a>
         </div>
         <button type="button" class="hamburger" aria-label="Menü öffnen" aria-expanded="false" id="hamburger">
           <span></span>
@@ -36,32 +36,35 @@
         <a href="#sicherheit">Sicherheit</a>
         <a href="#preise">Preise</a>
         <a href="#faq">FAQ</a>
-        <a href="#registrierung" class="btn-nav">Beta-Zugang sichern</a>
+        <a href="#registrierung" class="btn-nav hide-beta">Beta-Zugang sichern</a>
       </div>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container">
-        <h1>Belege per Threema einschicken. Fertig für den Steuerberater.</h1>
-        <p class="subline">BelegChat erfasst deine Belege automatisch, ordnet sie buchhalterisch ein und erstellt auf Knopfdruck eine DATEV-Exportdatei — GoBD-konform, DSGVO-sicher, ohne Papierchaos.</p>
-        <div class="hero-buttons">
-          <a href="#registrierung" class="btn-primary" aria-label="Als Beta-Tester einschreiben">Jetzt als Beta-Tester einschreiben</a>
-          <a href="#funktionsweise" class="link-secondary">Wie es funktioniert ↓</a>
+    <section class="hero-wrapper" aria-label="Hero">
+      <!-- Optional: Hintergrundbild z. B. /assets/images/hero.webp setzen -->
+      <div class="hero-bg" style="background-image: url('/assets/images/hero.webp');"></div>
+      <div class="hero">
+        <div class="container">
+          <h1>Belege per Threema einschicken. Fertig für den Steuerberater.</h1>
+          <p class="subline">BelegChat erfasst deine Belege automatisch, ordnet sie buchhalterisch ein und erstellt auf Knopfdruck eine DATEV-Exportdatei — GoBD-konform, DSGVO-sicher, ohne Papierchaos.</p>
+          <div class="hero-buttons">
+            <a href="#registrierung" class="btn-primary hide-beta" aria-label="Als Beta-Tester einschreiben">Jetzt als Beta-Tester einschreiben</a>
+            <a href="#funktionsweise" class="link-secondary">Wie es funktioniert ↓</a>
+          </div>
         </div>
       </div>
-    </section>
-
-    <section class="trust-bar" aria-label="Vertrauensmerkmale">
-      <div class="container">
-        <ul class="trust-list">
-          <li><span class="gold-plus" aria-hidden="true">+</span> GoBD-konform</li>
-          <li><span class="gold-plus" aria-hidden="true">+</span> DSGVO-sicher</li>
-          <li><span class="gold-plus" aria-hidden="true">+</span> Ende-zu-Ende-verschlüsselt via Threema</li>
-          <li><span class="gold-plus" aria-hidden="true">+</span> DATEV-Export auf Knopfdruck</li>
-          <li><span class="gold-plus" aria-hidden="true">+</span> Keine App-Installation notwendig</li>
-        </ul>
+      <div class="hero-trust" aria-label="Vertrauensmerkmale">
+        <div class="container">
+          <ul class="trust-list">
+            <li><span class="gold-plus" aria-hidden="true">+</span> GoBD-konform</li>
+            <li><span class="gold-plus" aria-hidden="true">+</span> DSGVO-sicher</li>
+            <li><span class="gold-plus" aria-hidden="true">+</span> Ende-zu-Ende-verschlüsselt via Threema</li>
+            <li><span class="gold-plus" aria-hidden="true">+</span> DATEV-Export auf Knopfdruck</li>
+            <li><span class="gold-plus" aria-hidden="true">+</span> Keine App-Installation notwendig</li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -85,7 +88,7 @@
             <p>DATEV-Datei herunterladen — Steuerberater importiert direkt</p>
           </article>
         </div>
-        <p class="steps-note">Kein Upload-Portal. Keine neue App. Nur Threema — den Messenger, dem du bereits vertraust.</p>
+        <p class="steps-note">Kein Upload-Portal. BelegChat nutzt du als Progressive Web App im Browser — optional auf dem Gerät installierbar. Belege schickst du ausschließlich per Threema: den Messenger, dem du bereits vertraust.</p>
       </div>
     </section>
 
@@ -105,7 +108,7 @@
           <h3>Die Technologie dahinter</h3>
           <article>
             <h4>Threema Work Gateway</h4>
-            <p>Das Herzstück von BelegChat. Jeder Kunde erhält eine dedizierte Threema-Gateway-ID — einen verschlüsselten Eingangskanal, der ausschließlich für diesen einen Buchungskreis existiert. Nachrichten und Anhänge werden Ende-zu-Ende-verschlüsselt übertragen. Kein Server liest mit, bevor die Entschlüsselung auf der BelegChat-Seite stattfindet. Das ist kein Standard in der Branche — es ist die bewusste Entscheidung für maximale Vertraulichkeit.</p>
+            <p>Das Herzstück von BelegChat. Jeder Kunde erhält eine dedizierte Threema-Gateway-ID — einen verschlüsselten Eingangskanal, der ausschließlich für die beiden Buchungskreise (Mandanten) dieses Kundenkontos existiert. Nachrichten und Anhänge werden Ende-zu-Ende-verschlüsselt übertragen. Kein Server liest mit, bevor die Entschlüsselung auf der BelegChat-Seite stattfindet. Damit setzt BelegChat bewusst auf maximale Vertraulichkeit.</p>
           </article>
           <article>
             <h4>Threema Work</h4>
@@ -124,22 +127,22 @@
             <p class="label">Ab offiziellem Launch</p>
             <p class="price">19,95 €/Monat</p>
           </article>
-          <article class="pricing-card featured">
+          <article class="pricing-card featured hide-beta">
             <h3>Beta-Einstieg ★</h3>
             <p class="label">Jetzt einsteigen, dauerhaft −20 %</p>
             <p class="price">15,95 €/Monat</p>
           </article>
-          <article class="pricing-card">
+          <article class="pricing-card hide-gruender">
             <h3>Gründertarif</h3>
             <p class="label">Max. 20 Plätze — dauerhaft −30 % ab Launch</p>
             <p class="price">9,95 € während Beta / 13,95 € ab Launch</p>
           </article>
         </div>
-        <p class="pricing-note">Alle Tarife inklusive bis zu 2 Mandanten und mindestens einer Threema-Work-ID. Abrechnung über Stripe. Monatlich kündbar. Kein Zweijahresabo.</p>
+        <p class="pricing-note">Alle Tarife inklusive bis zu zwei Mandanten und mindestens einer Threema-Work-ID. Abrechnung über Stripe. Monatlich kündbar.</p>
       </div>
     </section>
 
-    <section id="registrierung" aria-labelledby="heading-registrierung">
+    <section id="registrierung" class="hide-registration" aria-labelledby="heading-registrierung">
       <div class="container">
         <h2 id="heading-registrierung" class="section-title">Registrierung</h2>
         <form action="#" method="post" aria-label="Beta-Registrierung" id="register-form">
@@ -177,13 +180,25 @@
             </div>
           </li>
           <li class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-1b" id="faq-q1b">
+              Was bedeuten Kundenkonto, Mandant und Buchungskreis?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-1b" role="region" aria-labelledby="faq-q1b">
+              <div class="faq-answer-inner">
+                <strong>Kundenkonto:</strong> Dein BelegChat-Zugang. Ein Kundenkonto entspricht einem Vertrag und kann bis zu zwei Mandanten umfassen.<br>
+                <strong>Mandant / Buchungskreis:</strong> Ein Mandant ist ein buchhalterisch getrennter Bereich — z. B. eine Firma, ein Gewerbe oder ein Projekt. Jeder Mandant hat seine eigene Threema-Anbindung und seine eigenen Belege sowie Buchungssätze. Zwei Mandanten unter einem Konto sind strikt getrennt: Kein gegenseitiger Einblick, keine gemeinsamen Daten.
+              </div>
+            </div>
+          </li>
+          <li class="faq-item">
             <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-2" id="faq-q2">
               Weshalb muss ich Threema verwenden?
               <span class="faq-icon" aria-hidden="true">+</span>
             </button>
             <div class="faq-answer" id="faq-2" role="region" aria-labelledby="faq-q2">
               <div class="faq-answer-inner">
-                Threema ist der einzige Messenger, der Ende-zu-Ende-Verschlüsselung mit vollständiger Anonymität verbindet — keine Telefonnummer, keine E-Mail-Adresse erforderlich. Für Belege mit sensiblen Geschäftsdaten ist das keine Komfort-Entscheidung, sondern eine datenschutzrechtliche. BelegChat nutzt darüber hinaus Threema Work Gateway: Jeder Kunde erhält eine eigene, dedizierte Eingangs-ID. Was du einschickst, bleibt ausschließlich in deinem Buchungskreis.
+                Threema ist der einzige Messenger, der Ende-zu-Ende-Verschlüsselung mit vollständiger Anonymität verbindet — keine Telefonnummer, keine E-Mail-Adresse erforderlich. Für Belege mit sensiblen Geschäftsdaten ist das keine Komfort-Entscheidung, sondern eine datenschutzrechtliche. BelegChat nutzt darüber hinaus Threema Work Gateway: Jedes Kundenkonto erhält eine eigene, dedizierte Eingangs-ID. Was du einschickst, bleibt ausschließlich in deinen Buchungskreisen (Mandanten) dieses Kontos.
               </div>
             </div>
           </li>
@@ -194,7 +209,7 @@
             </button>
             <div class="faq-answer" id="faq-3" role="region" aria-labelledby="faq-q3">
               <div class="faq-answer-inner">
-                Threema Work Gateway ist eine API-Schnittstelle, über die Unternehmen verschlüsselte Nachrichten senden und empfangen können — programmatisch, automatisiert, ohne dass ein Mensch mitlesen kann. BelegChat nutzt diese Schnittstelle, um für jeden Kunden einen eigenen, verschlüsselten Eingangskanal zu betreiben. Kein anderes Buchhaltungstool in Deutschland setzt auf diese Technologie. Das ist das Alleinstellungsmerkmal von BelegChat.
+                Threema Work Gateway ist eine API-Schnittstelle, über die Unternehmen verschlüsselte Nachrichten senden und empfangen können — programmatisch, automatisiert, ohne dass ein Mensch mitlesen kann. BelegChat nutzt diese Schnittstelle, um für jedes Kundenkonto einen eigenen, verschlüsselten Eingangskanal zu betreiben und setzt damit bewusst auf maximale Vertraulichkeit.
               </div>
             </div>
           </li>
@@ -205,18 +220,18 @@
             </button>
             <div class="faq-answer" id="faq-4" role="region" aria-labelledby="faq-q4">
               <div class="faq-answer-inner">
-                Der Zugang zum BelegChat-Eingang ist an deine Threema-ID gebunden. Geht sie verloren, ist eine Wiederherstellung nicht möglich. Deshalb ist beim Onboarding ein Threema-Backup über den Tresor zwingend erforderlich — du bestätigst diesen Schritt aktiv. Der Betreiber haftet nicht für den Verlust der ID.
+                Zu Beginn des Onboardings erstellst du ein Threema-Backup, das auf dem Server gespeichert wird. Dieses Backup ist fester Bestandteil der Einrichtung und unumgänglich. Deine Threema-ID geht nur dann verloren, wenn das Kennwort für dieses Backup verloren geht. So ist dein Zugang zum BelegChat-Eingang bestmöglich abgesichert.
               </div>
             </div>
           </li>
           <li class="faq-item">
             <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-5" id="faq-q5">
-              Kann ich zwei getrennte Buchungskreise verwalten?
+              Wie viele Mandanten oder Buchungskreise unterstützt ein Konto?
               <span class="faq-icon" aria-hidden="true">+</span>
             </button>
             <div class="faq-answer" id="faq-5" role="region" aria-labelledby="faq-q5">
               <div class="faq-answer-inner">
-                Ja. Ein Konto unterstützt bis zu zwei Mandanten — zum Beispiel ein Privatunternehmen und ein zweites Geschäft, oder zwei Partner mit je einer eigenen Threema-ID. Jeder Buchungskreis ist strikt getrennt: Kein gegenseitiger Einblick, keine gemeinsamen Daten.
+                Ein Kundenkonto unterstützt bis zu zwei Mandanten — zum Beispiel ein Unternehmen und ein zweites Geschäft, oder zwei Partner mit je einer eigenen Threema-ID. Jeder Buchungskreis ist strikt getrennt: Kein gegenseitiger Einblick, keine gemeinsamen Daten.
               </div>
             </div>
           </li>
@@ -242,7 +257,7 @@
               </div>
             </div>
           </li>
-          <li class="faq-item">
+          <li class="faq-item hide-beta">
             <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-8" id="faq-q8">
               Was bedeutet Beta-Phase?
               <span class="faq-icon" aria-hidden="true">+</span>
@@ -260,7 +275,18 @@
             </button>
             <div class="faq-answer" id="faq-9" role="region" aria-labelledby="faq-q9">
               <div class="faq-answer-inner">
-                Personenbezogene Daten und Buchungsdaten werden in getrennten Datenbanken gespeichert (Zwei-Datenbank-Architektur mit Pseudonymisierung). Belegdateien liegen verschlüsselt im Storage-System. Alle eingehenden Daten kommen Ende-zu-Ende-verschlüsselt über Threema — kein Klartext-Eingang über unsichere Kanäle. Für alle externen Dienstleister (Supabase, Stripe u. a.) bestehen Auftragsverarbeitungsverträge gemäß Art. 28 DSGVO.
+                Personenbezogene Daten und Buchungsdaten werden in getrennten Datenbanken gespeichert (Zwei-Datenbank-Architektur mit Pseudonymisierung). Ein Kundenkonto unterstützt bis zu zwei Mandanten. Belegdateien liegen verschlüsselt im Storage-System. Alle eingehenden Daten kommen Ende-zu-Ende-verschlüsselt über Threema — kein Klartext-Eingang über unsichere Kanäle. Für alle externen Dienstleister (Supabase, Stripe u. a.) bestehen Auftragsverarbeitungsverträge gemäß Art. 28 DSGVO.
+              </div>
+            </div>
+          </li>
+          <li class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-10" id="faq-q10">
+              Warum „kein Upload-Portal“ — und was ist die BelegChat-App?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-10" role="region" aria-labelledby="faq-q10">
+              <div class="faq-answer-inner">
+                BelegChat kommt ohne separates Upload-Portal aus: Deine Belege schickst du direkt per Threema — kein separates Hochlade-Formular, kein zusätzlicher Kanal. Die Oberfläche, in der du Belege prüfst, Buchungskonten zuweist und den DATEV-Export erstellst, ist eine <strong>Progressive Web App (PWA)</strong>: Du nutzt BelegChat im Browser oder installierst die PWA optional auf deinem Gerät („Zum Startbildschirm hinzufügen“). Kein App-Store, keine native Installation. Der Eingang für Belege bleibt dabei immer Threema — der Messenger, dem du bereits vertraust.
               </div>
             </div>
           </li>
@@ -268,7 +294,7 @@
       </div>
     </section>
 
-    <section class="cta-banner" aria-label="Gründer-Plätze">
+    <section class="cta-banner hide-gruender" aria-label="Gründer-Plätze">
       <div class="container">
         <h2>Noch 20 Gründer-Plätze verfügbar</h2>
         <p class="subline">Dauerhaft 30 % unter dem regulären Preis. Solange das Konto aktiv bleibt.</p>

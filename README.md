@@ -28,6 +28,16 @@ In `assets/images/`:
 - `logo_farbe_v3.webp` — BERENT Wortlogo (Nav + Footer)
 - `BE_Farbe_V3.png` — BERENT Signet (Favicon)
 
+### Hero-Hintergrund (optional)
+
+Für die Hero-Sektion kann ein Bild unter `assets/images/hero.webp` hinterlegt werden. Ohne Datei bleibt der Hintergrund Anthrazit.
+
+**Vorschläge für ein passendes Bild ohne großen Aufwand:**
+
+- **Unsplash / Pexels (kostenlos):** Suche z. B. nach „office desk“, „receipt“, „document“, „minimal workspace“ — lizenzfrei, oft in hoher Auflösung. Bild herunterladen, in WebP konvertieren (z. B. [Squoosh](https://squoosh.app)), als `hero.webp` speichern.
+- **Eigenes Foto:** Schreibtisch, Ordner mit Belegen oder ein ruhiges Büro-Setting; mit dem Handy reicht oft. Für Web schmal zuschneiden (z. B. 1600×900 px) und als WebP exportieren.
+- **KI-generiert:** Dienste wie DALL·E, Midjourney oder Stable Diffusion mit Prompt z. B. „minimalistischer Schreibtisch mit Dokumenten, dunkler Hintergrund, professionell“ — dann in WebP konvertieren und einbinden.
+
 ## Lokal ansehen
 
 Einfach `index.html` im Browser öffnen oder einen lokalen Server starten:

@@ -31,15 +31,15 @@
   font-display: swap;
 }
 
-/* --- CSS Custom Properties (BERENT CI) --- */
+/* --- CSS Custom Properties (BERENT CI — Anthrazit) --- */
 :root {
-  --bg: #090806;
+  --bg: #0e0e10;
   --copper: #B5742A;
   --gold: #E8C98A;
   --text: #C4BCB1;
   --text-secondary: #9A8870;
-  --card-bg: #110E0A;
-  --border: #2A2118;
+  --card-bg: #151518;
+  --border: #2a2a2e;
   --info-bg: #1A1208;
 }
 
@@ -142,12 +142,13 @@ p {
 }
 
 .berent-brand img {
-  height: 32px;
+  height: 44px;
   width: auto;
   display: block;
 }
 
 .nav-wordmark {
+  display: none; /* Nur Logo, kein BELEGCHAT-Wordmark */
   font-family: 'Bebas Neue', sans-serif;
   font-size: 1.25rem;
   letter-spacing: 0.06em;
@@ -252,8 +253,40 @@ p {
 }
 
 /* --- Hero --- */
+/* Ausblenden (vorübergehend): Beta, Registrierung, Gründer */
+.hide-beta,
+.hide-registration,
+.hide-gruender {
+  display: none !important;
+}
+
+/* --- Hero mit unterer Trust-Leiste (wie berentai) --- */
+.hero-wrapper {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-wrapper .hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--bg);
+}
+.hero-wrapper .hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(14,14,16,0.5) 0%, var(--bg) 90%);
+  pointer-events: none;
+}
+
 .hero {
-  padding: 3rem 0 4rem;
+  position: relative;
+  flex: 1;
+  padding: 3rem 0 2rem;
   text-align: center;
 }
 
@@ -306,7 +339,14 @@ p {
   color: var(--gold);
 }
 
-/* --- Vertrauensleiste --- */
+/* Trust-Leiste als unterer Abschluss der Hero */
+.hero-trust {
+  position: relative;
+  background: var(--card-bg);
+  padding: 1rem 0;
+  border-top: 1px solid var(--border);
+}
+
 .trust-bar {
   background: var(--card-bg);
   padding: 1rem 0;
