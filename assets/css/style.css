@@ -380,6 +380,7 @@ p {
 
 /* Trust-Leiste (Abschlusszeile) am unteren Rand, responsive im Viewport */
 .hero-trust {
+  position: relative;
   flex-shrink: 0;
   background: var(--card-bg);
   padding: 0.75rem 0;
