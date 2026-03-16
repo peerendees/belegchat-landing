@@ -418,6 +418,65 @@ p {
   flex-shrink: 0;
 }
 
+/* --- Sicherheitsnachweise (Threema-Zertifizierungen) --- */
+#sicherheitsnachweise {
+  background: var(--bg);
+  padding: 3rem 0;
+}
+
+.sicherheitsnachweise-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .sicherheitsnachweise-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.sicherheitsnachweise-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sicherheitsnachweise-item .gold-plus {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.sicherheitsnachweise-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  color: var(--copper);
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.sicherheitsnachweise-text {
+  font-family: 'Lora', serif;
+  font-size: 0.95rem;
+  color: #9A8870;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.sicherheitsnachweise-quelle {
+  font-family: 'Lora', serif;
+  font-size: 0.85rem;
+  color: #9A8870;
+  font-weight: 300;
+  margin: 0;
+  text-align: center;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* --- Section generic --- */
 section {
   padding: 3rem 0;
