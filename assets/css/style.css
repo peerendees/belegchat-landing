@@ -304,8 +304,8 @@ p {
 }
 
 .hero-workflow {
-  max-width: 600px;
-  margin: 0 auto 1.5rem;
+  max-width: 750px;
+  margin: 2rem auto 1.5rem;
 }
 
 .hero-workflow-svg {
@@ -380,10 +380,6 @@ p {
 
 /* Trust-Leiste (Abschlusszeile) am unteren Rand, responsive im Viewport */
 .hero-trust {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
   flex-shrink: 0;
   background: var(--card-bg);
   padding: 0.75rem 0;
